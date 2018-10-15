@@ -89,8 +89,12 @@ $(document).ready(function () {
             openMenuMainBurger();
         });
     });
-    //закрытие меню при клике на подложке
+    //закрытие меню при клике на подложке и по пунктам меню
     $('.bgModalWindow').click( function(){
+              openMenuMainBurger();
+    });
+    $('a[href*="#"]').click( function(){
+        if (toggle == true)
               openMenuMainBurger();
     });
 });
