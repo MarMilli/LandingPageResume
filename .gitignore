@@ -1,4 +1,6 @@
-# /node_modules/
-# test
-# /.idea
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
 
