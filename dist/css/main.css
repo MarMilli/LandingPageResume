@@ -589,14 +589,6 @@ button {
   max-height: 100%;
   width: 100%; }
 
-.team .block__img:hover img {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s; }
-
 .team__description {
   width: 70%;
   color: #777777;
