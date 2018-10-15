@@ -83,20 +83,14 @@ $(document).ready(function () {
             $('.menuMain>div').toggleClass('menuMain__items', toggle).toggleClass('menuMainBurger__items');
             toggle = !toggle;
         };
-    //вызов функции при клике на кнопку
+    //вызов функции открытия выпадающего меню
     $(function(){
         $('.dropdownMenuButton').click(function(){
             openMenuMainBurger();
         });
     });
-    //закрытие меню при клике на любой области вне меню 
-    $(document).click( function(event){
-      if (toggle == true) {
-              if( $(event.target).closest(".menuMain").length ) return;
+    //закрытие меню при клике на подложке
+    $('.bgModalWindow').click( function(){
               openMenuMainBurger();
-              console.log('dfsdfsdfsf');
-              event.stopPropagation();
-             }
     });
-
 });

@@ -155,7 +155,7 @@ header a, header a:visited, header a:hover {
   margin: 0 3px;
   opacity: 0.8; }
 
-.menuMain__items .items li:hover, .menuMainBurger__items .items li:hover {
+.menuMain__items .items li:hover {
   opacity: 1; }
 
 .menuMainBurger {
@@ -187,7 +187,6 @@ header a, header a:visited, header a:hover {
   font-family: 'Montserrat', sans-serif; }
 
 .menuMainBurger__items .items li {
-  opacity: 0.8;
   margin: 10px 0; }
 
 .dropdownMenuButton {
@@ -215,7 +214,7 @@ header a, header a:visited, header a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   display: none; }
 
 .header__welcome {
