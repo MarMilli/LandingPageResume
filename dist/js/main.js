@@ -75,6 +75,9 @@ $(document).ready(function () {
     var  toggle = false; // переключатель
     //функция открытия выпадающего меню
     function openMenuMainBurger(){
+        if (toggle == false)
+            $('.bgModalWindow').show(); //затемняем фон
+        else $('.bgModalWindow').hide();
             $('.dropdownMenuButton').toggleClass('close'); //меняем иконку бургера на крестик
             $('.menuMain').toggleClass('menuMainBurger'); // открываем меню
             $('.menuMain>div').toggleClass('menuMain__items', toggle).toggleClass('menuMainBurger__items');
@@ -88,7 +91,7 @@ $(document).ready(function () {
     });
     //закрытие меню при клике на любой области вне меню 
     $(document).click( function(event){
-      if  (toggle ==  true) { 
+      if (toggle == true) {
               if( $(event.target).closest(".menuMain").length ) return;
               openMenuMainBurger();
               console.log('dfsdfsdfsf');
